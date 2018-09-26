@@ -59,7 +59,8 @@ namespace FPS
             if (IsOn)
             {
                 ButterySize -= 5 * Time.deltaTime;
-                if (ButterySize <= 0) Switch();
+                //if (ButterySize <= 0) Switch();
+                if (ButterySize <= 0) Off(); //Лучше Off вместо Switch, чтобы точно контроллировать действие
             }
             else if (ButteryFlag)
                 ButteryReg();
