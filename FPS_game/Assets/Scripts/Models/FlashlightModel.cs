@@ -12,6 +12,7 @@ namespace FPS
         private float ButteryMaxSize = 100;
         [SerializeField]
         private bool ButteryFlag = true;
+        
         public bool IsOn
         {
             get

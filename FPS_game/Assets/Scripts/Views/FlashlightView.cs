@@ -27,7 +27,9 @@ namespace FPS
         public void Update()
         {
             _image.fillAmount = _model.ButterySize * 0.01f;
-            
+            if (_model.ButterySize<30)
+            _image.color = new Color32(255, 0, 0, 255);
+            else _image.color = new Color32(255, 255, 255, 255);
         }
     }
 }
